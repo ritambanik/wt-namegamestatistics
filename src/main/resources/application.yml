@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: namegame-statistics
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: namegame-db
+      username: namegame
+      password: willowtree
+
+server:
+  port: 8083
+
+logging:
+  level:
+    root: DEBUG
+    com.willowtree.test.statistics: INFO
+
+namegame-statistics:
+  default:
+    countOfLeaders: 10
