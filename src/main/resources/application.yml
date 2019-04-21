@@ -3,7 +3,8 @@ spring:
     name: namegame-statistics
   data:
     mongodb:
-      host: localhost
+      host: namegame-db-mongodb
+      ##host: localhost -- for connecting to local MongoDB instance or if the app is running outside minikube and MongoDB inside minikube with port forwarding
       port: 27017
       database: namegame-db
       username: namegame
